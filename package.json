@@ -4,8 +4,8 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "dev": "parcel ./index.html --open",
-    "build": "parcel build ./index.html"
+    "dev": "parcel ./src/index.html --open",
+    "build": "parcel build ./src/index.html"
   },
   "author": "",
   "license": "ISC",
