@@ -4,7 +4,7 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "dev": "parcel ./src/index.html --open",
+    "dev": "parcel ./index.html --open",
     "build": "parcel build ./src/index.html"
   },
   "author": "",
