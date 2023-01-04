@@ -543,7 +543,7 @@ var _mainJoinButton = require("./scripts/joinPopUP/mainJoinButton");
 (0, _mainJoinButton.mainJoinButton)();
 window.initMap = (0, _map.initMap);
 
-},{"./scripts/mainPageScripts/burger":"aPhOc","./scripts/headerNav/headerNavigation":"f9WVj","./scripts/mainPageScripts/map":"jTfpc","./scripts/mainPageScripts/slider":"c1llB","./scripts/joinPopUP/mainJoinButton":"77d1l"}],"aPhOc":[function(require,module,exports) {
+},{"./scripts/mainPageScripts/burger":"aPhOc","./scripts/headerNav/headerNavigation":"f9WVj","./scripts/mainPageScripts/slider":"c1llB","./scripts/joinPopUP/mainJoinButton":"77d1l","./scripts/mainPageScripts/map":"jTfpc"}],"aPhOc":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "burger", ()=>burger);
@@ -1327,32 +1327,6 @@ function addActiveClassToPage(target) {
     target.classList.add("menu-active");
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jTfpc":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "initMap", ()=>initMap);
-function initMap() {
-    var mark = document.querySelector(".map__marker");
-    var pos = {
-        lat: 46.30156959231706,
-        lng: 30.653228
-    };
-    var opt = {
-        center: pos,
-        zoom: 19,
-        disableDefaultUI: true,
-        disableDoubleClickZoom: true,
-        fullscreenControl: false
-    };
-    map = new google.maps.Map(document.getElementById("map"), opt);
-    const marker = new google.maps.Marker({
-        position: pos,
-        map: map,
-        title: "Спавн шизов",
-        icon: mark
-    });
-}
-
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"c1llB":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -1475,6 +1449,32 @@ function mainJoinButton() {
     });
 }
 
-},{"./popUpRender":"71M8W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["ShInH","8lqZg"], "8lqZg", "parcelRequireb62b")
+},{"./popUpRender":"71M8W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jTfpc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "initMap", ()=>initMap);
+function initMap() {
+    var mark = document.querySelector(".map__marker");
+    var pos = {
+        lat: 46.30156959231706,
+        lng: 30.653228
+    };
+    var opt = {
+        center: pos,
+        zoom: 19,
+        disableDefaultUI: true,
+        disableDoubleClickZoom: true,
+        fullscreenControl: false
+    };
+    map = new google.maps.Map(document.getElementById("map"), opt);
+    const marker = new google.maps.Marker({
+        position: pos,
+        map: map,
+        title: "Спавн шизов",
+        icon: mark
+    });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["ShInH","8lqZg"], "8lqZg", "parcelRequireb62b")
 
 //# sourceMappingURL=index.975ef6c8.js.map
